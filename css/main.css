@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 5.2rem !important;
+  line-height: 1.07;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+
+a:link,
+a:visited {
+  border-radius: 0 0 0 0.8rem rgb(230 125 34 / 50%);
+}
+
+@layer utilities {
+  .border-35 {
+    border-width: 35px;
+  }
+}
+
+input:focus,
+button:focus {
+  box-shadow: 0 0 0 0.8rem rgb(253 242 233 / 50%);
+}
+
+.pricing__card::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+  z-index: 80;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem !important;
+  }
+}
